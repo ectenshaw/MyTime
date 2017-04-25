@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "571894318119",
+    "firebase_url": "https://itec370-7aa6c.firebaseio.com",
+    "project_id": "itec370-7aa6c",
+    "storage_bucket": "itec370-7aa6c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:571894318119:android:955047c6c28cb143",
+        "android_client_info": {
+          "package_name": "com.simplemobiletools.calendar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "571894318119-2rtvr51vq78p6s3hlpbvb7lumb1q0pg6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.simplemobiletools.calendar",
+            "certificate_hash": "ac9b1e76cbf2aa24ca927775ec31b42dda5e74e6"
+          }
+        },
+        {
+          "client_id": "571894318119-mvq4sldtsjqoi4on7tv0n1v0r7baac89.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVl8EwUon12fikXxkP8eNKWSt1rwWRmzk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "571894318119-mvq4sldtsjqoi4on7tv0n1v0r7baac89.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

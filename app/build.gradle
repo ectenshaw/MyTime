@@ -1,0 +1,106 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        applicationId "com.simplemobiletools.calendar"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 70
+        versionName "2.3.3"
+
+    }
+
+    signingConfigs {
+        release
+    }
+
+    buildTypes {
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+           // signingConfig signingConfigs.release
+        }
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+}
+
+dependencies {
+    fileTree(dir: 'libs', include: ['*.jar']);
+    //add this line
+    
+
+    /*compile 'com.google.code.gson:gson:2.8.0'
+    compile('com.google.http-client:google-http-client-gson:1.22.0') {
+        exclude group: 'org.apache.httpcomponents'
+    }
+
+    compile 'com.google.android.gms:play-services-auth:10.0.1'
+    compile('com.google.api-client:google-api-client-android:1.22.0') {
+        exclude group: 'org.apache.httpcomponents'
+    }
+    compile('com.google.apis:google-api-services-calendar:v3-rev230-1.22.0') {
+        exclude group: 'org.apache.httpcomponents'
+    }*/
+ /*   compile 'com.google.firebase:firebase-appindexing:10.2.0'
+
+    compile 'com.google.firebase:firebase-storage:10.2.0'
+    compile 'com.google.firebase:firebase-core:10.2.0'
+    compile 'com.google.firebase:firebase-database:10.2.0'
+    compile 'com.google.firebase:firebase-messaging:10.2.0'
+    compile 'com.google.firebase:firebase-auth:10.2.0' */
+    compile 'org.jetbrains.kotlin:kotlin-stdlib:0.6+'
+
+    compile 'com.simplemobiletools:commons:2.16.9'
+    compile 'joda-time:joda-time:2.9.1'
+    compile 'com.facebook.stetho:stetho:1.4.1'
+    compile 'com.bignerdranch.android:recyclerview-multiselect:0.2'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.0.0'
+}
+
+buildscript {
+    ext.kotlin_version = '1.1.1'
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.jetbrains.kotlin:kotlin-android-extensions:$kotlin_version"
+        classpath "com.google.gms:google-services:3.0.0"
+    }
+}
+
+def Properties props = new Properties()
+def propFile = new File('signing.properties')
+if (propFile.canRead()) {
+    props.load(new FileInputStream(propFile))
+
+    if (props != null && props.containsKey('STORE_FILE') && props.containsKey('KEY_ALIAS') && props.containsKey('PASSWORD')) {
+        android.signingConfigs.release.storeFile = file(props['STORE_FILE'])
+        android.signingConfigs.release.storePassword = props['PASSWORD']
+        android.signingConfigs.release.keyAlias = props['KEY_ALIAS']
+        android.signingConfigs.release.keyPassword = props['PASSWORD']
+    } else {
+        println 'signing.properties found but some entries are missing'
+        android.buildTypes.release.signingConfig = null
+    }
+} else {
+    println 'signing.properties not found'
+    android.buildTypes.release.signingConfig = null
+}
+
+
+apply plugin: 'com.google.gms.google-services'

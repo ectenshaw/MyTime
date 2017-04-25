@@ -1,0 +1,244 @@
+<resources>
+    <string name="app_name">Jednoduchý kalendár</string>
+    <string name="app_launcher_name">Kalendár</string>
+    <string name="change_view">Zmeniť pohľad</string>
+    <string name="weekly_view">Týždenný</string>
+    <string name="monthly_view">Mesačný</string>
+    <string name="yearly_view">Ročný</string>
+    <string name="simple_event_list">Jednoduchý zoznam</string>
+    <string name="no_upcoming_events">Nemáte žiadne naplánované udalosti.</string>
+    <string name="add_some_events">Viete ich pridať pomocou tlačidla Plus v pravom dolnom rohu.</string>
+    <string name="details">Detaily</string>
+    <string name="go_to_today">Prejsť na dnešok</string>
+    <string name="no_app_for_ics">Nenašla sa žiadna aplikácia schopná spracovania .ics súboru</string>
+
+    <!-- Widget titles -->
+    <string name="widget_monthly">Kalendár mesačný</string>
+    <string name="widget_list">Kalendár so zoznamom</string>
+
+    <!-- Event -->
+    <string name="event">Udalosť</string>
+    <string name="edit_event">Upraviť udalosť</string>
+    <string name="new_event">Nová udalosť</string>
+    <string name="title_empty">Prosím zadajte názov</string>
+    <string name="end_before_start">Udalosť nemôže skončiť skôr ako by začala</string>
+    <string name="event_added">Udalosť bola úspešne pridaná</string>
+    <string name="past_event_added">Udalosť v minulosti bola úspešne pridaná</string>
+    <string name="event_updated">Udalosť bola úspešne upravená</string>
+    <string name="filter">Filtrovať</string>
+    <string name="filter_events_by_type">Filtrovať udalosti podľa typu</string>
+
+    <!-- Event Repetition -->
+    <string name="select_repeat_interval">Zvoľte opakovanie</string>
+    <string name="repetition">Opakovanie</string>
+    <string name="no_repetition">Neopakuje sa</string>
+    <string name="daily">Denne</string>
+    <string name="weekly">Týždenne</string>
+    <string name="monthly">Mesačne</string>
+    <string name="yearly">Ročne</string>
+    <string name="weeks_raw">týždňov</string>
+    <string name="months_raw">mesiacov</string>
+    <string name="years_raw">rokov</string>
+    <string name="repeat_till">Opakovať do:</string>
+    <string name="forever">Navždy</string>
+    <string name="selection_contains_repetition">Výber obsahuje opakujúce sa udalosti</string>
+    <string name="delete_one_only">Vymazať iba označené opakovania</string>
+    <string name="delete_all_occurrences">Vymazať všetky opakovania</string>
+    <string name="update_one_only">Upraviť iba označené opakovania</string>
+    <string name="update_all_occurrences">Upraviť všetky opakovania</string>
+    <string name="repeat_till_date">Opakovať po dátum</string>
+    <string name="repeat_x_times">Opakovať x krát</string>
+    <string name="times">krát</string>
+    <string name="repeat">Opakovať</string>
+    <string name="every_day">Každý deň</string>
+    <string name="selected_days">Vo vybraných dňoch</string>
+    <string name="on_the_same_day">Každý mesiac v rovnaký deň</string>
+    <string name="on_the_last_day">Posledný deň v mesiaci</string>
+    <string name="every_m">Každý</string>
+    <string name="first_m">prvý</string>
+    <string name="second_m">druhý</string>
+    <string name="third_m">tretí</string>
+    <string name="fourth_m">štvrtý</string>
+    <string name="last_m">posledný</string>
+
+    <!-- alternative versions for some languages, use the same translations if you are not sure what this means -->
+    <!-- used in repetition, like "Every first Sunday" -->
+    <string name="every_f">Každú</string>
+    <string name="first_f">prvú</string>
+    <string name="second_f">druhú</string>
+    <string name="third_f">tretiu</string>
+    <string name="fourth_f">štvrtú</string>
+    <string name="last_f">poslednú</string>
+
+    <plurals name="days">
+        <item quantity="one">%1$d deň</item>
+        <item quantity="few">%1$d dni</item>
+        <item quantity="other">%1$d dní</item>
+    </plurals>
+
+    <plurals name="weeks">
+        <item quantity="one">%1$d týždeň</item>
+        <item quantity="few">%1$d týždne</item>
+        <item quantity="other">%1$d týždňov</item>
+    </plurals>
+
+    <plurals name="months">
+        <item quantity="one">%1$d mesiac</item>
+        <item quantity="few">%1$d mesiace</item>
+        <item quantity="other">%1$d mesiacov</item>
+    </plurals>
+
+    <plurals name="years">
+        <item quantity="one">%1$d rok</item>
+        <item quantity="two">%1$d roky</item>
+        <item quantity="other">%1$d rokov</item>
+    </plurals>
+
+    <!-- Event Reminders -->
+    <string name="select_event_reminder">Zvoľte pripomienku</string>
+    <string name="reminder">Pripomenka</string>
+    <string name="no_reminder">Žiadna pripomienka</string>
+    <string name="at_start">Na začiatku</string>
+    <string name="custom">Vlastná</string>
+    <string name="before">pred</string>
+    <string name="minutes_raw">minúty</string>
+    <string name="hours_raw">hodiny</string>
+    <string name="days_raw">dni</string>
+    <string name="add_another_reminder">Pridať ďalšiu pripomienku</string>
+
+    <plurals name="minutes">
+        <item quantity="one">%1$d minútu vopred</item>
+        <item quantity="few">%1$d minúty vopred</item>
+        <item quantity="other">%1$d minút vopred</item>
+    </plurals>
+
+    <plurals name="hours">
+        <item quantity="one">%1$d hodinu vopred</item>
+        <item quantity="few">%1$d hodiny vopred</item>
+        <item quantity="other">%1$d hodín vopred</item>
+    </plurals>
+
+    <plurals name="days_before">
+        <item quantity="one">%1$d deň vopred</item>
+        <item quantity="few">%1$d dni vopred</item>
+        <item quantity="other">%1$d dní vopred</item>
+    </plurals>
+
+    <!-- Export / Import -->
+    <string name="import_events">Importovať udalosti</string>
+    <string name="export_events">Exportovať udalosti</string>
+    <string name="import_events_from_ics">Importovať udalosti z .ics súboru</string>
+    <string name="export_events_to_ics">Exportovať udalosti do .ics súboru</string>
+    <string name="events_imported_successfully">Udalosti boli úspešne importované</string>
+    <string name="events_exported_successfully">Udalosti boli úspešne exportované</string>
+    <string name="importing_events_failed">Importovanie udalostí zlyhalo</string>
+    <string name="exporting_events_failed">Exportovanie udalostí zlyhalo</string>
+    <string name="importing_some_events_failed">Importovanie niektorých udalostí zlyhalo</string>
+    <string name="exporting_some_events_failed">Exportovanie niektorých udalostí zlyhalo</string>
+    <string name="invalid_file_format">Nesprávny formát súboru</string>
+    <string name="default_event_type">Predvolený typ udalosti</string>
+    <string name="no_events_for_exporting">Nenašli sa žiadne udalosti na exportovanie</string>
+    <string name="export_past_events_too">Exportovať aj minulé udalosti</string>
+
+    <!-- Event details -->
+    <string name="title">Názov</string>
+    <string name="description">Popis</string>
+    <string name="all_day">Celodenná</string>
+
+    <!-- Weekly view -->
+    <string name="week">Týždeň</string>
+
+    <!-- Event types -->
+    <string name="event_types">Typy udalostí</string>
+    <string name="add_new_type">Pridať nový typ</string>
+    <string name="edit_type">Upraviť typ</string>
+    <string name="type_already_exists">Typ s daným názvom už existuje</string>
+    <string name="color">Farba</string>
+    <string name="regular_event">Bežná udalosť</string>
+    <string name="cannot_delete_default_type">Predvolený typ nie je možné vymazať</string>
+    <string name="select_event_type">Zvoľte typ udalosti</string>
+
+    <!-- Settings -->
+    <string name="manage_event_types">Spravovať typy udalostí</string>
+    <string name="use_24_hour_format">Použiť 24 hodinový formát</string>
+    <string name="sunday_first">Začať týždeň nedeľou</string>
+    <string name="start_weekly_at">Začať týždenný pohľad o</string>
+    <string name="end_weekly_at">Ukončiť týždenný pohľad o</string>
+    <string name="week_numbers">Zobraziť čísla týždňov v mesačnom pohľade</string>
+    <string name="vibrate">Vibrovať pri pripomienke</string>
+    <string name="reminder_sound">Zvučka pripomienky</string>
+    <string name="default_event_reminder">Predvolená hodnota pripomienky</string>
+    <string name="no_ringtone_picker">Nenašla sa žiadna aplikácia na zmenu zvučky</string>
+    <string name="no_ringtone_selected">Žiadna</string>
+    <string name="day_end_before_start">Deň nemôže skončiť skôr než začne</string>
+    <string name="google_sync">Google synchronizácia</string>
+
+    <string name="january">Január</string>
+    <string name="february">Február</string>
+    <string name="march">Marec</string>
+    <string name="april">Apríl</string>
+    <string name="may">Máj</string>
+    <string name="june">Jún</string>
+    <string name="july">Júl</string>
+    <string name="august">August</string>
+    <string name="september">September</string>
+    <string name="october">Október</string>
+    <string name="november">November</string>
+    <string name="december">December</string>
+
+    <string name="monday_letter">P</string>
+    <string name="tuesday_letter">U</string>
+    <string name="wednesday_letter">S</string>
+    <string name="thursday_letter">Š</string>
+    <string name="friday_letter">P</string>
+    <string name="saturday_letter">S</string>
+    <string name="sunday_letter">N</string>
+
+    <string name="monday">Pondelok</string>
+    <string name="tuesday">Utorok</string>
+    <string name="wednesday">Streda</string>
+    <string name="thursday">Štvrtok</string>
+    <string name="friday">Piatok</string>
+    <string name="saturday">Sobota</string>
+    <string name="sunday">Nedeľa</string>
+
+    <!-- alternative versions for some languages, use the same translations if you are not sure what this means -->
+    <!-- used in repetition, like "Every last Sunday" -->
+    <string name="monday_alt">pondelok</string>
+    <string name="tuesday_alt">utorok</string>
+    <string name="wednesday_alt">stredu</string>
+    <string name="thursday_alt">štvrtok</string>
+    <string name="friday_alt">piatok</string>
+    <string name="saturday_alt">sobotu</string>
+    <string name="sunday_alt">nedeľu</string>
+
+    <!-- List widget config example events -->
+    <string name="sample_title_1">Cvičenie</string>
+    <string name="sample_description_1">Nohy</string>
+    <string name="sample_title_2">Stretnutie s Janom</string>
+    <string name="sample_description_2">V Astone</string>
+    <string name="sample_title_3">Knižnica</string>
+    <string name="sample_title_4">Obed s Katkou</string>
+    <string name="sample_description_4">V supermarkete</string>
+    <string name="sample_title_5">Káva</string>
+
+    <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
+    <!-- Short description has to have less than 80 chars -->
+    <string name="app_short_description">Jednoduchý kalendár s udalosťami, upraviteľným widgetom a bez reklám.</string>
+    <string name="app_long_description">
+        Offline kalendár bez integrácie iného kalendára. Viete si jednoducho vytvoriť opakujúce sa udalosti s pripomienkami, alebo zobraziť čísla týždňov.
+
+        Obsahuje škálovateľný 4x4 widget, kde viete upraviť farbu textu, ako aj priehľadnosť a farbu pozadia.
+
+        Neobsahuje žiadne reklamy a nepotrebné oprávnenia. Je opensource, poskytuje možnosť zmeny farieb.
+
+        Oprávnenie na prístup k súborom je potrebné iba v prípade importovania udalostí z .ics súboru.
+
+        Táto aplikácia je iba jednou zo skupiny aplikácií. Ostatné viete nájsť na http://www.simplemobiletools.com
+    </string>
+
+    <!--
+        Haven't found some strings? There's more at
+        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
+    -->
+</resources>

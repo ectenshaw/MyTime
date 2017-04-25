@@ -1,0 +1,23 @@
+<resources>
+
+    <style name="AppTheme" parent="AppTheme.Base"/>
+
+    <style name="DayView">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/day_text_size</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="MetaView" parent="DayView">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/meta_text_size</item>
+    </style>
+
+    <style name="ArrowStyle">
+        <item name="android:background">@drawable/transparent_button</item>
+    </style>
+
+    <style name="MonthStyle">
+        <item name="android:background">@drawable/transparent_button</item>
+    </style>
+</resources>

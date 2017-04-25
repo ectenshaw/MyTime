@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.simplemobiletools.calendar">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!--
+<uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    -->
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_launcher_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.SplashActivity"
+            android:theme="@style/SplashTheme">
+
+        </activity>
+
+        <activity
+            android:name=".activities.SignupActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.LoginActivity"
+            android:label="MyTime">
+
+        </activity>
+
+
+
+
+        <activity android:name=".activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="content" />
+                <data android:scheme="file" />
+                <data android:mimeType="text/x-vcalendar" />
+                <data android:mimeType="text/calendar" />
+            </intent-filter>
+        </activity>
+
+
+
+        <activity
+            android:name=".activities.WidgetMonthlyConfigureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyWidgetConfigTheme">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+
+
+
+        <activity
+            android:name=".activities.WidgetListConfigureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyWidgetConfigTheme">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+
+
+
+
+
+        <activity
+            android:name="com.simplemobiletools.commons.activities.AboutActivity"
+            android:label="@string/about"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name="com.simplemobiletools.commons.activities.CustomizationActivity"
+            android:label="@string/customize_colors"
+            android:parentActivityName=".activities.SettingsActivity" />
+        <activity
+            android:name="com.simplemobiletools.commons.activities.LicenseActivity"
+            android:label="@string/third_party_licences"
+            android:parentActivityName="com.simplemobiletools.commons.activities.AboutActivity" />
+        <activity
+            android:name=".activities.DayActivity"
+            android:label="@string/details"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".activities.EventActivity"
+            android:label="@string/event"
+            android:parentActivityName=".activities.DayActivity" />
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:label="@string/settings"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".activities.ManageEventTypesActivity"
+            android:label="@string/event_types"
+            android:parentActivityName=".activities.SettingsActivity" />
+
+        <receiver
+            android:name=".helpers.MyWidgetMonthlyProvider"
+            android:icon="@drawable/img_widget_monthly_preview"
+            android:label="@string/widget_monthly">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_monthly_info" />
+        </receiver>
+        <receiver
+            android:name=".helpers.MyWidgetListProvider"
+            android:icon="@drawable/img_widget_list_preview"
+            android:label="@string/widget_list">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_list_info" />
+        </receiver>
+
+        <service
+            android:name=".services.WidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <receiver android:name=".receivers.NotificationReceiver" />
+        <receiver android:name=".receivers.BootCompletedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.simplemobiletools.calendar.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+
+    </application>
+
+</manifest>

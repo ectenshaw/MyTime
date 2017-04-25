@@ -1,0 +1,316 @@
+<resources>
+    <string name="app_name">Simple Calendar</string>
+    <string name="app_launcher_name">Calendar</string>
+    <string name="change_view">Change view</string>
+    <string name="weekly_view">Weekly view</string>
+    <string name="monthly_view">Monthly view</string>
+    <string name="yearly_view">Yearly view</string>
+    <string name="simple_event_list">Simple event list</string>
+    <string name="no_upcoming_events">Seems like you don\'t have any upcoming events.</string>
+    <string name="add_some_events">You can add some with the Plus button at the bottom.</string>
+    <string name="details">Details</string>
+    <string name="go_to_today">Go to today</string>
+    <string name="no_app_for_ics">No app capable of handling .ics files has been found</string>
+    <string name="confirm_registry">Email not found. You want to create a new user with that email and password?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <!-- Widget titles -->
+    <string name="widget_monthly">Calendar monthly</string>
+    <string name="widget_list">Calendar event list</string>
+
+
+            
+            
+        <string name="email">Email</string>
+            
+        <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
+            
+        <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
+            
+        <string name="change_email">Change Email</string>
+            
+        <string name="change_password">Change Password</string>
+            
+        <string name="send_password_reset_email">Send Password reset email</string>
+            
+        <string name="remove_user">Remove user</string>
+            
+        <string name="new_pass">New Password</string>
+            
+        <string name="title_activity_profile">Firebase</string>
+           
+            
+        <string name="hint_email">Email</string>
+            
+        <string name="hint_password">Password</string>
+            
+        <string name="hint_name">Fullname</string>
+            
+        <string name="btn_login">LOGIN</string>
+            
+        <string name="btn_link_to_register">Not a member? Get registered in Firebase now!</string>
+            
+        <string name="btn_link_to_login">Already registered. Login Me!</string>
+            
+        <string name="title_activity_reset_password">ResetPasswordActivity</string>
+            
+        <string name="btn_forgot_password">Forgot your password?</string>
+            
+        <string name="btn_reset_password">Reset Password</string>
+            
+        <string name="btn_back"><![CDATA[<< Back]]></string>
+            
+        <string name="hint_new_email">New Email</string>
+            
+        <string name="btn_change">Change</string>
+            
+        <string name="btn_send">Send</string>
+            
+        <string name="btn_remove">Remove</string>
+            
+
+            
+        <string name="lbl_forgot_password">Forgot password?</string>
+            
+        <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
+
+    <string  name="btn_sign_out">Sign Out</string>
+    <string name="btn_sign_up">Sign Up !!</string>
+    <string name="err_msg_email">Enter a valid email.</string>
+    <string name="err_msg_required">Required !!</string>
+    <string name="err_msg_password">Enter a valid password with min 6 characters.</string>
+    <string name="btn_link_to_signup">Don\'t have an account, Signup !!</string>
+
+    <!-- Event -->
+    <string name="event">Event</string>
+    <string name="edit_event">Edit Event</string>
+    <string name="new_event">New Event</string>
+    <string name="title_empty">Title cannot be empty</string>
+    <string name="end_before_start">The event cannot end earlier than it starts</string>
+    <string name="event_added">Event added successfully</string>
+    <string name="past_event_added">Event in the past added successfully</string>
+    <string name="event_updated">Event updated successfully</string>
+    <string name="filter">Filter</string>
+    <string name="filter_events_by_type">Filter events by type</string>
+
+    <!-- Event Repetition -->
+    <string name="select_repeat_interval">Select a repeat interval</string>
+    <string name="repetition">Repetition</string>
+    <string name="no_repetition">No repetition</string>
+    <string name="daily">Daily</string>
+    <string name="weekly">Weekly</string>
+    <string name="monthly">Monthly</string>
+    <string name="yearly">Yearly</string>
+    <string name="weeks_raw">weeks</string>
+    <string name="months_raw">months</string>
+    <string name="years_raw">years</string>
+    <string name="repeat_till">Repeat till:</string>
+    <string name="forever">Forever</string>
+    <string name="selection_contains_repetition">The selection contains repeating events</string>
+    <string name="delete_one_only">Delete the selected occurrence only</string>
+    <string name="delete_all_occurrences">Delete all occurrences</string>
+    <string name="update_one_only">Update the selected occurrence only</string>
+    <string name="update_all_occurrences">Update all occurrences</string>
+    <string name="repeat_till_date">Repeat till a date</string>
+    <string name="repeat_x_times">Repeat x times</string>
+    <string name="times">times</string>
+    <string name="repeat">Repeat</string>
+    <string name="every_day">Every day</string>
+    <string name="selected_days">On selected days</string>
+    <string name="on_the_same_day">On the same day every month</string>
+    <string name="on_the_last_day">On the last day of the month</string>
+    <string name="every_m">Every</string>
+    <string name="first_m">first</string>
+    <string name="second_m">second</string>
+    <string name="third_m">third</string>
+    <string name="fourth_m">fourth</string>
+    <string name="last_m">last</string>
+
+    <!-- alternative versions for some languages, use the same translations if you are not sure what this means -->
+    <!-- used in repetition, like "Every first Sunday" -->
+    <string name="every_f">Every</string>
+    <string name="first_f">first</string>
+    <string name="second_f">second</string>
+    <string name="third_f">third</string>
+    <string name="fourth_f">fourth</string>
+    <string name="last_f">last</string>
+
+    <plurals name="days">
+        <item quantity="one">%1$d day</item>
+        <item quantity="other">%1$d days</item>
+    </plurals>
+
+    <plurals name="weeks">
+        <item quantity="one">%1$d week</item>
+        <item quantity="other">%1$d weeks</item>
+    </plurals>
+
+    <plurals name="months">
+        <item quantity="one">%1$d month</item>
+        <item quantity="other">%1$d months</item>
+    </plurals>
+
+    <plurals name="years">
+        <item quantity="one">%1$d year</item>
+        <item quantity="other">%1$d years</item>
+    </plurals>
+
+    <!-- Event Reminders -->
+    <string name="select_event_reminder">Select an event reminder</string>
+    <string name="reminder">Reminder</string>
+    <string name="no_reminder">No reminder</string>
+    <string name="at_start">At start</string>
+    <string name="custom">Custom</string>
+    <string name="before">before</string>
+    <string name="minutes_raw">minutes</string>
+    <string name="hours_raw">hours</string>
+    <string name="days_raw">days</string>
+    <string name="add_another_reminder">Add another reminder</string>
+
+    <plurals name="minutes">
+        <item quantity="one">%1$d minute before</item>
+        <item quantity="other">%1$d minutes before</item>
+    </plurals>
+
+    <plurals name="hours">
+        <item quantity="one">%1$d hour before</item>
+        <item quantity="other">%1$d hours before</item>
+    </plurals>
+
+    <plurals name="days_before">
+        <item quantity="one">%1$d day before</item>
+        <item quantity="other">%1$d days before</item>
+    </plurals>
+
+    <!-- Export / Import -->
+    <string name="import_events">Import events</string>
+    <string name="export_events">Export events</string>
+    <string name="import_events_from_ics">Import events from an .ics file</string>
+    <string name="export_events_to_ics">Export events to an .ics file</string>
+    <string name="events_imported_successfully">Events have been imported successfully</string>
+    <string name="events_exported_successfully">Events have been exported successfully</string>
+    <string name="importing_events_failed">Importing events failed</string>
+    <string name="exporting_events_failed">Exporting events failed</string>
+    <string name="importing_some_events_failed">Importing some events failed</string>
+    <string name="exporting_some_events_failed">Exporting some events failed</string>
+    <string name="invalid_file_format">Invalid file format</string>
+    <string name="default_event_type">Default event type</string>
+    <string name="no_events_for_exporting">No events for exporting have been found</string>
+    <string name="export_past_events_too">Export past events too</string>
+
+    <!-- Event details -->
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="all_day">All-day</string>
+
+    <!-- Weekly view -->
+    <string name="week">Week</string>
+
+    <!-- Event types -->
+    <string name="event_types">Event types</string>
+    <string name="add_new_type">Add a new type</string>
+    <string name="edit_type">Edit type</string>
+    <string name="type_already_exists">Type with this title already exists</string>
+    <string name="color">Color</string>
+    <string name="regular_event">Regular event</string>
+    <string name="cannot_delete_default_type">Default event type cannot be deleted</string>
+    <string name="select_event_type">Select an event type</string>
+
+    <!-- Settings -->
+    <string name="manage_event_types">Manage event types</string>
+    <string name="use_24_hour_format">Use 24-hour format</string>
+    <string name="sunday_first">Sunday as first day</string>
+    <string name="start_weekly_at">Start weekly view day at</string>
+    <string name="end_weekly_at">End weekly view day at</string>
+    <string name="week_numbers">Show week numbers in monthy view</string>
+    <string name="vibrate">Vibrate on reminder notification</string>
+    <string name="reminder_sound">Reminder sound</string>
+    <string name="default_event_reminder">Default event reminder</string>
+    <string name="no_ringtone_picker">No app capable of setting ringtone found</string>
+    <string name="no_ringtone_selected">None</string>
+    <string name="day_end_before_start">The day cannot end earlier than it starts</string>
+    <string name="google_sync">Google sync</string>
+
+    <string name="january">January</string>
+    <string name="february">February</string>
+    <string name="march">March</string>
+    <string name="april">April</string>
+    <string name="may">May</string>
+    <string name="june">June</string>
+    <string name="july">July</string>
+    <string name="august">August</string>
+    <string name="september">September</string>
+    <string name="october">October</string>
+    <string name="november">November</string>
+    <string name="december">December</string>
+
+    <string name="monday_letter">M</string>
+    <string name="tuesday_letter">T</string>
+    <string name="wednesday_letter">W</string>
+    <string name="thursday_letter">T</string>
+    <string name="friday_letter">F</string>
+    <string name="saturday_letter">S</string>
+    <string name="sunday_letter">S</string>
+
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+
+    <!-- alternative versions for some languages, use the same translations if you are not sure what this means -->
+    <!-- used in repetition, like "Every last Sunday" -->
+    <string name="monday_alt">Monday</string>
+    <string name="tuesday_alt">Tuesday</string>
+    <string name="wednesday_alt">Wednesday</string>
+    <string name="thursday_alt">Thursday</string>
+    <string name="friday_alt">Friday</string>
+    <string name="saturday_alt">Saturday</string>
+    <string name="sunday_alt">Sunday</string>
+
+    <!-- List widget config example events -->
+    <string name="sample_title_1">Workout</string>
+    <string name="sample_description_1">Leg day</string>
+    <string name="sample_title_2">Meeting with John</string>
+    <string name="sample_description_2">In Rockstone garden</string>
+    <string name="sample_title_3">Library</string>
+    <string name="sample_title_4">Lunch with Mary</string>
+    <string name="sample_description_4">In the Plaza</string>
+    <string name="sample_title_5">Coffee time</string>
+
+    <!-- Strings displayed only on Google Playstore. Optional, but good to have -->
+    <!-- Short description has to have less than 80 chars -->
+    <string name="app_short_description">A simple calendar with events, customizable widget and no ads.</string>
+    <string name="app_long_description">
+        An offline calendar without any other calendar integration. You can easily create recurring events and setup reminders, it can also display week numbers.
+
+        Contains a resizable 4x4 widget where you can customize the color of the text, as well as the alpha and the color of the background.
+
+        Contains no ads or unnecessary permissions. It is fully opensource, provides customizable colors.
+
+        The Storage permission is needed only for importing events from .ics files.
+
+        This app is just one piece of a bigger series of apps. You can find the rest of them at http://www.simplemobiletools.com
+    </string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!--
+        Haven't found some strings? There's more at
+        https://github.com/SimpleMobileTools/Simple-Commons/tree/master/commons/src/main/res
+    -->
+</resources>

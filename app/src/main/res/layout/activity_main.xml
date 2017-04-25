@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/calendar_coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/main_weekly_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/week_view_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/week_view_hours_divider"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignRight="@+id/week_view_hours_scrollview"
+                android:background="@drawable/stroke_bottom_right"/>
+
+            <com.simplemobiletools.calendar.views.MyScrollView
+                android:id="@+id/week_view_hours_scrollview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/week_view_hours_divider"
+                android:background="@drawable/stroke_right"
+                android:overScrollMode="never"
+                android:paddingTop="@dimen/medium_margin"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/week_view_hours_holder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/weekly_view_row_height"/>
+
+            </com.simplemobiletools.calendar.views.MyScrollView>
+
+            <com.simplemobiletools.commons.views.MyViewPager
+                android:id="@+id/week_view_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/week_view_hours_scrollview"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.simplemobiletools.commons.views.MyViewPager
+        android:id="@+id/main_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <FrameLayout
+        android:id="@+id/calendar_event_list_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.simplemobiletools.commons.views.MyFloatingActionButton
+        android:id="@+id/calendar_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/activity_margin"
+        android:src="@drawable/ic_plus"
+        app:backgroundTint="@color/color_primary"
+        app:rippleColor="@color/pressed_item_foreground"/>
+
+</android.support.design.widget.CoordinatorLayout>

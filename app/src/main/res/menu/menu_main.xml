@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/go_to_today"
+        android:icon="@drawable/ic_today"
+        android:title="@string/go_to_today"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/change_view"
+        android:icon="@drawable/ic_change_view"
+        android:title="@string/change_view"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/filter"
+        android:icon="@drawable/ic_filter"
+        android:title="@string/filter"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/import_events"
+        android:title="@string/import_events_from_ics"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/export_events"
+        android:title="@string/export_events_to_ics"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/settings"
+        android:title="@string/settings"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/about"
+        android:title="@string/about"
+        app:showAsAction="never"/>
+</menu>
