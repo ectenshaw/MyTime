@@ -19,14 +19,18 @@
         android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/logo"
-        android:label="@string/app_launcher_name"
+        android:label="MyTime"
         android:theme="@style/AppTheme">
         <activity
             android:name=".activities.SplashActivity"
             android:theme="@style/SplashTheme">
 
         </activity>
+        <activity
+            android:name=".activities.ProfileScreen"
+            android:theme = "@style/AppTheme2">
 
+        </activity>
         <activity
             android:name=".activities.SignupActivity">
             <intent-filter>
@@ -38,7 +42,6 @@
         <activity
             android:name=".activities.LoginActivity"
             android:label="MyTime">
-
         </activity>
 
 

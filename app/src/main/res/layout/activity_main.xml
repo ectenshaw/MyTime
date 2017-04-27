@@ -57,7 +57,18 @@
     <com.simplemobiletools.commons.views.MyViewPager
         android:id="@+id/main_view_pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent">
+
+        <com.simplemobiletools.commons.views.MyFloatingActionButton
+            android:id="@+id/myFloatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/activity_margin"
+            android:src="@drawable/ic_plus"
+            app:backgroundTint="@color/color_primary"
+            app:rippleColor="@color/pressed_item_foreground" />
+    </com.simplemobiletools.commons.views.MyViewPager>
 
     <FrameLayout
         android:id="@+id/calendar_event_list_holder"
@@ -75,4 +86,15 @@
         app:backgroundTint="@color/color_primary"
         app:rippleColor="@color/pressed_item_foreground"/>
 
+    <com.simplemobiletools.commons.views.MyFloatingActionButton
+        android:id="@+id/calendar_fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_margin="@dimen/activity_margin"
+        android:src="@drawable/circle_empty"
+        app:backgroundTint="@color/color_primary"
+        app:layout_anchor="@+id/main_view_pager"
+        app:layout_anchorGravity="bottom|left"
+        app:rippleColor="@color/pressed_item_foreground" />
 </android.support.design.widget.CoordinatorLayout>
